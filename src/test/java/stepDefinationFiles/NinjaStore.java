@@ -43,7 +43,7 @@ public class NinjaStore {
 	@Then("^I clicks on Login button$")
 	public void clicksonLoginbutton()  {
 	
-		driver.findElement(By.cssSelector("input[type='submit'][value='Login']")).click();
+		driver.findElement(By.cssSelector("input[type='submit'][value='LoginGanesh']")).click();
 	    
 	}
 
