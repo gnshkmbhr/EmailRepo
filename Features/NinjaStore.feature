@@ -6,5 +6,4 @@ Scenario: Test with the valid login credentials
 	When Enter the valid Username gnshkmbhr25@gmail.com and Password gnshkmbhr into the login fields
 	Then I clicks on Login button
 	And User should login successfully
-	And User should see the Account Option when successful login
 	

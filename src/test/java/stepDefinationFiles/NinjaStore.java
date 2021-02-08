@@ -15,9 +15,9 @@ import cucumber.api.java.en.When;
 
 public class NinjaStore {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	
-	//Given keyword
+	
 	@Given("^Navigate to tutorialsninja website$")
 	public void navigatetotutorialsninjawebsite()  {
 		
@@ -27,7 +27,7 @@ public class NinjaStore {
 		
 		driver.manage().window().maximize();
 		
-		driver.get("http://tutorialsninja.com/demo/index.php?route=account/login");
+		driver.get("http://tutorialsninja.com/demo/index.php?route=account/loginGanesh");
 	    
 	}
 
@@ -43,7 +43,7 @@ public class NinjaStore {
 	@Then("^I clicks on Login button$")
 	public void clicksonLoginbutton()  {
 	
-		driver.findElement(By.cssSelector("input[type='submit'][value='LoginGanesh']")).click();
+		driver.findElement(By.cssSelector("input[type='submit'][value='Login']")).click();
 	    
 	}
 
@@ -61,5 +61,7 @@ public class NinjaStore {
 			System.out.println("User has not logged in");
 		}
 		Assert.assertNotNull("User has not logged in", element);
+		driver.close();
 	}
+	
 }
